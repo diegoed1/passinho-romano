@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="main.js" defer></script>
+    <title>Passinho do Romano</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo">
+            Codificando 
+        </h1>
+    </header><br>
+    <main id="container">
+        <div  class="box">
+            <br>
+            <div>
+                <p><b>Escolha um dos modos:</b></p>
+                <select name="select" id="id_escolha">
+                    <optgroup class="selecionar">
+                        <option selected="selected">SELECIONE O MODO AQUI!</option>
+                        <option value="option1">CIFRA DE CÉSAR</option>
+                        <option value="option2">BASE64</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="texto" class="incremento">
+                <br>
+                <p id="titulo1">Digite a mensagem:</p>
+                <textarea class="txt" rows=5 cols=40 id="texto" placeholder="Digite aqui sua mensagem"></textarea>
+                <br>
+                <div id="option" style="display: none;">
+                    <i>Chave de deslocamento</i>
+                    <input type="number" id="offset" value="3" >
+                </div>
+              </div>
+            <div id= "radbtn">
+                <input type="radio" name="codificar" value="codificar" id="codificar"/>Codificar
+                <input type="radio" name="codificar" value="decodificar" id="decodificar"/>Decodificar 
+            </div>
+            <div>
+                <button class="button" type="submit" id="buttons" onclick="code()"></button>
+            </div>
+        </div>
+
+            <div class="box2">
+                <div id="result" class="result">
+                    <br>
+                    <h3 id="titulo2">Mensagem cifrada/decifrada:</h3>
+                    <textarea class="txt" rows=5 cols=40 id="final" placeholder="Mensagem cifrada/decifrada aparecerá aqui"></textarea><br>
+                  </div>
+                
+                  <div class="rodape">
+                      <br>
+                    <button class="button" onclick="limpar()">Limpar tudo</button>
+                  </div>
+            </div>
+    </main>
+    <footer>
+        <div class="autor">
+            @Copyright Diego Luz da Silva - Resilia Turma 15
+        </div>
+    </footer>
+</body>
+
+</html>
